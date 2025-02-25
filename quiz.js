@@ -74,9 +74,11 @@ function showAnswerFeedback(optionInput, questionData, questionDiv) {
   if (optionInput.value === questionData.options[questionData.correct_answer]) {
     feedbackDiv.textContent = 'Correct!';
     feedbackDiv.style.color = 'green';
+    feedbackDiv.classList.add('correct');
   } else {
     feedbackDiv.textContent = 'Incorrect! The correct answer is: ' + questionData.options[questionData.correct_answer];
     feedbackDiv.style.color = 'red';
+    feedbackDiv.classList.add('incorrect');
   }
 
   // Append feedback to the question div
