@@ -3,7 +3,7 @@ let quizData = {};  // Global variable to store the quiz data
 // Function to fetch quiz data from the JSON file
 async function loadQuizData() {
   try {
-    const response = await fetch('questions.json'); // Fetch the JSON file
+    const response = await fetch('questions1.json'); // Fetch the JSON file
     quizData = await response.json(); // Parse the JSON data
 
     // Set the quiz title dynamically
